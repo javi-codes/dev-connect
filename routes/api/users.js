@@ -8,7 +8,7 @@ const config = require("config");
 const User = require("../../models/User");
 
 // @route  POST  api/users
-// @desc   Test route
+// @desc   Create user
 // @access Public
 router.post(
   "/",
