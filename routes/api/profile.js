@@ -165,7 +165,7 @@ router.delete("/", auth, async (req, res) => {
 // @desc   Add  profile, experience
 // @access Private
 router.put(
-  "/",
+  "/experience",
   [
     auth,
     [
