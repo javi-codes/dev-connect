@@ -1,5 +1,6 @@
 const express = require("express");
 const connectDB = require("./config/db");
+require("module-alias/register");
 
 const app = express();
 

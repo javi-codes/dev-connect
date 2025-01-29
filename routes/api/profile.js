@@ -3,9 +3,9 @@ const { check, validationResult } = require("express-validator");
 const axios = require("axios");
 
 const config = require("config");
-const auth = require("../../middleware/auth");
-const Profile = require("../../models/Profile");
-const User = require("../../models/User");
+const auth = require("@middleware/auth");
+const Profile = require("@models/Profile");
+const User = require("@models/User");
 
 // @route  GET api/profile/me
 // @desc   Get current user's profile
