@@ -1,9 +1,12 @@
 const router = require("express").Router();
+const { check, validationResult } = require("express-validator");
 
-// @route  GET api/posts
-// @desc   Test route
-// @access Public
-router.get("/", (req, res) => {
+const auth = require("../../middleware/auth");
+
+// @route  POST api/posts
+// @desc   Create a post
+// @access Private
+router.post("/", (req, res) => {
   res.send("Post route");
 });
 
